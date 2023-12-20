@@ -52,8 +52,8 @@ services:
     environment:
       # create a database called `db`
       POSTGRES_DB: "db"
-      # trust incoming connections blindly (DON'T DO THIS IN PRODUCTION!)
-      POSTGRES_HOST_AUTH_METHOD: "trust"
+      POSTGRES_PASSWORD: "unleash"
+
     healthcheck:
       test:
         [
